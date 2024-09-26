@@ -24,9 +24,6 @@ const config: HardhatUserConfig = {
       {
         version: "0.8.17",
       },
-      {
-        version: "0.6.11",
-      }
     ]
   },
   circom: {
@@ -38,8 +35,8 @@ const config: HardhatUserConfig = {
     circuits: JSON.parse(JSON.stringify(circuits))
   },
    networks:{
-    cardona:{
-      url:process.env.POLYGON_ZKEVM_CARDONA_API_URL,
+    cardano:{
+      url:process.env.POLYGON_ZKEVM_CARDONA_ALCHEMY_API_URL,
       accounts:[process.env.PRIVATE_KEY],
     }
   }
